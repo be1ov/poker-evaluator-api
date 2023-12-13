@@ -4,7 +4,7 @@ from fastapi import FastAPI
 app = FastAPI()
 evaluator = Evaluator()
 
-@app.get("/poker/check_it_please/{hand}")
+@app.get("/poker/check_it_please/")
 def get_combination(hand: str):
     data = hand.split("-")
     board = []
